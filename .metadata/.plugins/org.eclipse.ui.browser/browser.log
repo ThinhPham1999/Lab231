@@ -1,0 +1,3 @@
+
+Mar 06, 2020 23:27:24.80 NEW SESSION
+Mar 06, 2020 23:27:24.83 [6808:14780:0306/232723.586:ERROR:CONSOLE(764)] "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://www.google.com') does not match the recipient window's origin ('chrome-search://local-ntp').", source: chrome-search://most-visited/single.js (764)

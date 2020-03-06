@@ -1,0 +1,57 @@
+package dao;
+
+import bean.Product;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class ProductDAO {
+	public ArrayList<Product> showAll(){
+        ArrayList<Product> result = new ArrayList<>();
+        try(Connection con = CreateConnection.getConnect()){
+            Statement stmt = con.createStatement();
+            String query = "Select productID, productName, ProductPicture, productContent from Product";
+            ResultSet re = stmt.executeQuery(query);
+            while(re.next()){
+                int productID = re.getInt(1);
+                String productName = re.getString(2);
+                String ProductPicture = re.getString(3);
+                String productContent = re.getString(4);
+                result.add(new Product(productID, productName, ProductPicture, productContent));
+            }
+            con.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(ProductDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return result;
+    }
+	
+	public Product product(int id) {
+		Product pro = null;
+		try (Connection con=CreateConnection.getConnect()){
+            
+            Statement stmt= con.createStatement(); 
+            ResultSet rs=stmt.executeQuery("Select ProductID, ProductName, ProductPicture, ProductContent from Product where ProductID='"+id+"'"); 
+            if(rs.next()){
+            	int productID = id;
+                String productName= rs.getString(2); 
+                String productImage= rs.getString(3);
+                String productContent = rs.getString(4);
+                pro = new Product(productID, productName, productImage, productContent);
+            }
+            con.close();
+            return pro;
+		}catch(Exception ex) {
+			Logger.getLogger(ProductDAO.class.getName()).log(Level.SEVERE, null, ex);
+            return null;
+		}
+	}
+    
+    public static void main(String[] arg){
+        System.out.println(new ProductDAO().product(1));
+    }
+}

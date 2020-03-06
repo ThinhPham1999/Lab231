@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form>
+    	<h5 style="text-indent: 20px; margin-top: 10px;">Share this page</h5>
+        <ul class="info">
+        	<li><a href="#" style="color:black">Share on Facebook</a></li>
+            <li><a href="#">Share on Twitter</a></li>
+            <li><a href="#">Share on Google+</a></li>
+        </ul>                 
+    </form>
+</body>
+</html>

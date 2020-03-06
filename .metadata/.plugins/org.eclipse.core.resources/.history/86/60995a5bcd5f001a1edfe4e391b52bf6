@@ -1,0 +1,16 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<jsp:useBean id="count" class="controller.CounterFilter" scope="application"></jsp:useBean>
+</head>
+<body>
+	<div class="footer-page-counter" style="display: block;">
+    	<span>${count}</span>
+    	
+    </div>
+</body>
+</html>

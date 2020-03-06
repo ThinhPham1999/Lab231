@@ -1,0 +1,96 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<jsp:include page="header.jsp"></jsp:include>
+		<div class="main-content">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-9 col-lg-9">
+                        <div class="header-content">
+                            <p style="margin-top: 20px; font-size:30px;">Find us</p>     
+                        </div>
+                        <div class="content">
+                            <div class="page1">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-lg-6">
+                                        <div class="header-content" style="margin-left: -20px;">
+                                            <p>Address and contact: <p>
+                                        </div>
+                                        <div>
+                                            <div class="country">
+                                                <p>The Sushi Restaurant<br>New York, NY, USA</p>
+                                           </div>
+                   
+                                           <div class="row">
+    											<div class="col-sm-3">
+      												Tel
+    											</div>
+    											<div class="col-sm-9">
+      												 <a href="tel:12345" class="info">
+                                        				12345
+                                   					 </a>	
+    											</div>
+  											</div>
+  											
+  											<div class="row">
+    											<div class="col-sm-3">
+      												Email:  
+    											</div>
+    											<div class="col-sm-9">
+      												<a href="mailto:your-email@your-email.com" class="info">
+                                                       	your-email@your-email.com
+                                                    </a>
+    											</div>
+  											</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-lg-6" >
+                                        <div class="header-content" style="margin-left: -20px;">
+                                            <h5>Opening hour: </h5>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                Monday Closed<br>
+                                                Tuesday 12 - 22<br>
+                                                Wednesday 12 - 22<br>
+                                                Thursday 12 - 22<br>
+                                                Friday 11 - 23<br>
+                                                Saturday 11 - 23<br>
+                                                Sunday 11 - 22
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="map">
+                                <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px; border-radius: 10px">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.2803951558517!2d108.2034673148582!3d16.050932988892235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219bbac29a89b%3A0xd1216d40b4bca153!2zMTUwIER1eSBUw6JuLCBIw7JhIFRodeG6rW4gTmFtLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcgNTUwMDAw!5e0!3m2!1svi!2s!4v1582770866774!5m2!1svi!2s"
+                                      style="border:0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                      
+                    </div>
+                    <div class="col-xs-0 col-sm-3 col-lg-3">
+                        <jsp:include page="share.jsp"></jsp:include>
+                    </div>
+                  </div>
+            </div>
+            <div class="footer">
+                <a>This is page counter</a>
+            </div>
+		
+	</div>
+</body>
+</html>

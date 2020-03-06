@@ -1,0 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<form>
+    	<p style="text-indent: 20px; margin-top: 10px; margin-bottom: 5px; font-size: 18px; font-weight: bolder;">Share this page</p>
+        <ul class="info" style="list-style-type: none; margin-left: -20px">
+        	<li><a href="" class="information"><i class="fa fa-facebook-official" style="margin-right: 5px;"></i>Share on Facebook</a></li>
+            <li><a href="" class="information"><i class="fa fa-twitter-square" style="margin-right: 5px;"></i>Share on Twitter</a></li>
+            <li><a href="" class="information"><i class="fa fa-google-plus-official" style="margin-right: 5px;"></i>Share on Google+</a></li>
+        </ul>                 
+    </form>
+</body>
+</html>
