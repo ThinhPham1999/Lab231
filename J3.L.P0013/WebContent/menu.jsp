@@ -24,14 +24,14 @@
                         <div style="margin: 20px;">
                             <h3>Menu and Price list</h3>
                         </div>
-                        <c:forEach items="${menu.showAll()}" var="m">
+                        <c:forEach items="${menu.showAll()}" var="m" varStatus="loop">
                         <div class="page2">
                         	<div class="artical">
                             	<div class="title">
                             		<table class="table">
                             		<tbody>
     									<tr>
-      										<td>Menu</td>
+      										<td>Menu ${loop.count}</td>
       										<td style="text-align: right;">Price</td>
     									</tr>
     									<tr>
