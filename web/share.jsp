@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="./Home_files/css.css">
+    <link rel="stylesheet" type="text/css" href="Home/css.css">
     <script src="https://kit.fontawesome.com/eee6e774ce.js" crossorigin="anonymous"></script>
     <style type="text/css">
         .fancybox-margin {

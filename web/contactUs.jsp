@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Find my Cakes</title>
         <script src="https://kit.fontawesome.com/eee6e774ce.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="./Home_files/css.css">        
+        <link rel="stylesheet" type="text/css" href="Home/css.css">        
         <style type="text/css">
             .fancybox-margin {
                 margin-right: 17px;

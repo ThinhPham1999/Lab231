@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>header</title>
-    <link rel="stylesheet" type="text/css" href="./Home_files/css.css">
+    <link rel="stylesheet" type="text/css" href="Home/css.css">
     <style type="text/css">
         .fancybox-margin {
             margin-right: 17px;

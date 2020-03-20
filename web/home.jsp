@@ -9,8 +9,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Home</title>
     <script src="https://kit.fontawesome.com/eee6e774ce.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./Home_files/css.css">
-    <jsp:useBean id="product" class="DAO.ProductDAO" scope="page"></jsp:useBean>
+    <link rel="stylesheet" type="text/css" href="Home/css.css">
     <style type="text/css">
         .fancybox-margin {
             margin-right: 17px;
@@ -19,23 +18,22 @@
 </head>
 <body>
     <div class="container-fluid site-wrapper">
-        <jsp:include page="header.jsp"></jsp:include>
         <div class="container-fluid content-wrapper" id="content">
+            <jsp:include page="header.jsp"></jsp:include>
             <div class="container">
                 <div class="row-fluid content-inner">
                     <div id="left" class="span9">
                         <div class="wrapper ">
                             <div class="content">
-                            <c:forEach items="${product.getP()}" var="obj">
                                 <div class="section article">
                                     <div class="content">
                                         <div class="img-simple span3 pull-left">
                                             <div class="image">
-                                                <a><img src="${obj}"></a>
+                                                <a><img src=""></a> <!--?nh to ?? ?ây-->
                                             </div>
                                         </div>
                                         <p><span style="font-family: georgia, palatino; font-size: 24px;"><span
-                                                    style="font-family: georgia, palatino;">${obj}</span></span></p>
+                                                    style="font-family: georgia, palatino;"><!--Title to ?? ?ây!--></span></span></p>
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
                                             nibh euismod tincidunt ut
                                             laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
@@ -52,7 +50,7 @@
                                             <li class="span6">
                                                 <div class="img-simple span12 ">
                                                     <div class="image">
-                                                        <a><img src="Home_files/anh2.jpg"></a>
+                                                        <a><img src="Home/anh2.jpg"></a>
                                                     </div>
                                                 </div>
                                                 <h4>
@@ -66,7 +64,7 @@
                                             <li class="span6">
                                                 <div class="img-simple span12 ">
                                                     <div class="image">
-                                                        <a><img src="Home_files/anh3.jpg"></a>
+                                                        <a><img src="Home/anh3.jpg"></a>
                                                     </div>
                                                 </div>
                                                 <h4>
@@ -80,7 +78,6 @@
                                         </ul>
                                     </div>
                                 </div>
-                            </c:forEach>
                                 <div class="section article">
                                     <div class="content">
                                         <p><span
