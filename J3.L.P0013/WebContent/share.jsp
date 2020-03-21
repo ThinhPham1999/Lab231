@@ -11,9 +11,9 @@
 	<form>
     	<p style="text-indent: 20px; margin-top: 10px; margin-bottom: 5px; font-size: 18px; font-weight: bolder;">Share this page</p>
         <ul class="info" style="list-style-type: none; margin-left: -20px">
-        	<li><a href="" class="information"><i class="fa fa-facebook-official" style="margin-right: 5px;"></i>Share on Facebook</a></li>
-            <li><a href="" class="information"><i class="fa fa-twitter-square" style="margin-right: 5px;"></i>Share on Twitter</a></li>
-            <li><a href="" class="information"><i class="fa fa-google-plus-official" style="margin-right: 5px;"></i>Share on Google+</a></li>
+        	<li><a href="https://www.facebook.com/profile.php?id=100037948631961" class="information"><i class="fa fa-facebook-official" style="margin-right: 5px;"></i>Share on Facebook</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100037948631961" class="information"><i class="fa fa-twitter-square" style="margin-right: 5px;"></i>Share on Twitter</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100037948631961" class="information"><i class="fa fa-google-plus-official" style="margin-right: 5px;"></i>Share on Google+</a></li>
         </ul>                 
     </form>
 </body>
