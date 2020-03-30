@@ -14,6 +14,7 @@
                 margin-right: 17px;
             }
         </style>
+        <jsp:useBean id="info" class="dao.InformationDAO" scope="page"></jsp:useBean>
     </head>
     <body style="background-image: url('http://css.simplesite.com/images/v3/backgrounds/pictures/body/blur-redblack.jpg');
 		background-repeat: no-repeat;
@@ -41,7 +42,7 @@
                                                             </div>
                                                             <div class="content">
                                                                 <div class="country">
-                                                                    <p>Copenhagen, Denmark</p>
+                                                                    <p>${info.takeInfo().address}</p>
                                                                 </div>
 
                                                                 <div class="row-fluid">
@@ -50,7 +51,7 @@
                                                                     </div>
                                                                     <div class="span9">
                                                                         <a rel="nofollow" href="tel:123456">
-                                                                            123456
+                                                                            ${info.takeInfo().phone}
                                                                         </a>
                                                                     </div>
                                                                 </div>
@@ -61,7 +62,7 @@
                                                                     <div class="span9">
                                                                         <a rel="nofollow"
                                                                            href="mailto:your-email@your-email.com">
-                                                                            your-email@your-email.com
+                                                                            ${info.takeInfo().email}
                                                                         </a>
                                                                     </div>
                                                                 </div>

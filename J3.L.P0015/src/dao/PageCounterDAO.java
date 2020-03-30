@@ -9,11 +9,11 @@ import java.util.logging.Logger;
 
 
 public class PageCounterDAO {
-	public int takePage(int id) {
+	public int takePage() {
 		int result = 0;
 		try (Connection con=CreateConnection.getConnect()){
             Statement stmt= con.createStatement(); 
-            ResultSet rs=stmt.executeQuery("Select PageCounterNumber from PageCounter where PageCounterID='"+id+"'"); 
+            ResultSet rs=stmt.executeQuery("Select hit from PageCounter"); 
             if(rs.next()){
             	result = rs.getInt(1);
             }
@@ -25,11 +25,10 @@ public class PageCounterDAO {
 		}
 	}
 	
-	public boolean editPageCounter(int id, int counter) {
+	public boolean editPageCounter(int counter) {
 		try (Connection con=CreateConnection.getConnect()){
-            PreparedStatement stmt= con.prepareStatement("Update PageCounter set PageCounterNumber=? where PageCounterID=?"); // Should use
+            PreparedStatement stmt= con.prepareStatement("Update PageCounter set hit=?"); // Should use
             stmt.setInt(1, counter);
-            stmt.setInt(2, id);
             stmt.executeUpdate();
             con.close();
             return true;
@@ -41,7 +40,7 @@ public class PageCounterDAO {
 	}
 	
 	public static void main(String[] arg) {
-		System.out.print(new PageCounterDAO().editPageCounter(1, 4));
-		System.out.print(new PageCounterDAO().takePage(1));
+		System.out.print(new PageCounterDAO().editPageCounter(4));
+		System.out.print(new PageCounterDAO().takePage());
 	}
 }
