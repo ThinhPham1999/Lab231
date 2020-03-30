@@ -9300,3 +9300,29 @@ Caused by: java.lang.NullPointerException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2020-03-07 00:59:40.653
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QnahmCXf => OK
+
+!ENTRY org.eclipse.core.jobs 4 2 2020-03-30 13:25:04.129
+!MESSAGE An internal error occurred during: "Hard Reset".
+!STACK 0
+org.eclipse.jgit.api.errors.JGitInternalException: Exception caught during execution of reset command. Could not rename file F:\fpt\Spring 2020\LAB231\Project\E Project\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log8276812338943574911.tmp to F:\fpt\Spring 2020\LAB231\Project\E Project\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:242)
+	at org.eclipse.egit.core.op.ResetOperation.reset(ResetOperation.java:104)
+	at org.eclipse.egit.core.op.ResetOperation.access$0(ResetOperation.java:88)
+	at org.eclipse.egit.core.op.ResetOperation$1.run(ResetOperation.java:77)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2295)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2322)
+	at org.eclipse.egit.core.op.ResetOperation.execute(ResetOperation.java:81)
+	at org.eclipse.egit.core.internal.job.JobUtil$2.runInWorkspace(JobUtil.java:107)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Could not rename file F:\fpt\Spring 2020\LAB231\Project\E Project\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log8276812338943574911.tmp to F:\fpt\Spring 2020\LAB231\Project\E Project\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1545)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.doCheckout(DirCacheCheckout.java:579)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkout(DirCacheCheckout.java:486)
+	at org.eclipse.jgit.api.ResetCommand.checkoutIndex(ResetCommand.java:447)
+	at org.eclipse.jgit.api.ResetCommand.call(ResetCommand.java:215)
+	... 9 more
+Caused by: java.io.IOException: Could not rename file F:\fpt\Spring 2020\LAB231\Project\E Project\.metadata\.plugins\org.eclipse.m2e.logback.configuration\._0.log8276812338943574911.tmp to F:\fpt\Spring 2020\LAB231\Project\E Project\.metadata\.plugins\org.eclipse.m2e.logback.configuration\0.log
+	at org.eclipse.jgit.util.FileUtils.rename(FileUtils.java:330)
+	at org.eclipse.jgit.dircache.DirCacheCheckout.checkoutEntry(DirCacheCheckout.java:1543)
+	... 13 more

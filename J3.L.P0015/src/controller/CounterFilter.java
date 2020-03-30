@@ -47,7 +47,7 @@ public class CounterFilter implements Filter {
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
 		hitcount++;
         System.out.println(hitcount);
-        new PageCounterDAO().editPageCounter(1, hitcount);
+        new PageCounterDAO().editPageCounter(hitcount);
         request.setAttribute("hit", hitcount);
 		chain.doFilter(request, response);
 	}
@@ -56,7 +56,7 @@ public class CounterFilter implements Filter {
 	 * @see Filter#init(FilterConfig)
 	 */
 	public void init(FilterConfig fConfig) throws ServletException {
-		hitcount = new PageCounterDAO().takePage(1);
+		hitcount = new PageCounterDAO().takePage();
 	}
 
 }

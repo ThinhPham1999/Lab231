@@ -16,6 +16,7 @@
         }
     </style>
     <jsp:useBean id="product" class="dao.ProductDAO" scope="page"></jsp:useBean>
+    <jsp:useBean id="info" class="dao.InformationDAO" scope="page"></jsp:useBean>
 </head>
 <body style="background-image: url('http://css.simplesite.com/images/v3/backgrounds/pictures/body/blur-redblack.jpg');
 		background-repeat: no-repeat;
@@ -71,9 +72,9 @@
                                         <p><span
                                                 style="font-family: times,times new roman; font-size: 24px;">Visit
                                                 my cafe</span></p>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                                        <p>${info.takeInfo().address}</p>
                                         <p>Gammel Torv, Copenhagen</p>
-                                        <p>Phone: 12 1234 1234</p>
+                                        <p>Phone: ${info.takeInfo().phone}</p>
                                     </div>
                                 </div>
                                 <div class="section signature">
